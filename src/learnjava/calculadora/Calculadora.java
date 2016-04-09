@@ -72,4 +72,12 @@ public class Calculadora implements Calculavel {
         return resultado;
     }
 
+    @Override
+    public double fatorialRecursivo(double num) {
+        if (num != 0) {
+            return num * fatorialRecursivo(num - 1);
+        } else {
+            return 1;
+        }
+    }
 }

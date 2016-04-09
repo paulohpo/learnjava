@@ -76,4 +76,10 @@ public class CalculadoraTest {
         System.out.println("Fatorial!");
         Assert.assertEquals(120, calculadora.fatorial(5), 0);
     }
+    
+    @Test
+    public void testFatorialRecursivo() {
+        System.out.println("Fatorial Recursivo!");
+        Assert.assertEquals(120, calculadora.fatorialRecursivo(5), 0);
+    }
 }

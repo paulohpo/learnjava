@@ -17,4 +17,6 @@ public interface Calculavel {
     double raizQuadrada(double num);
     
     double fatorial(double num);
+    
+    double fatorialRecursivo(double num);
 }

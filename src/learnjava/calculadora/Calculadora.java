@@ -80,4 +80,24 @@ public class Calculadora implements Calculavel {
             return 1;
         }
     }
+
+    @Override
+    public int[] fibonnaci() {
+        int[] sequencia = new int[10];
+        for (int i = 0; i < 10; i++) {
+            sequencia[i] = fibonnaci(i);
+        }
+        for (int i : sequencia) {
+            System.out.println(i);
+        }
+        return sequencia;
+    }
+
+    private int fibonnaci(int numero) {
+        if (numero < 2) {
+            return numero;
+        } else {
+            return fibonnaci(numero - 1) + fibonnaci(numero - 2);
+        }
+    }
 }

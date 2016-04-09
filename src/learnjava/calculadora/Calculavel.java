@@ -19,4 +19,6 @@ public interface Calculavel {
     double fatorial(double num);
     
     double fatorialRecursivo(double num);
+    
+    int[] fibonnaci();
 }

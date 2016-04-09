@@ -70,16 +70,23 @@ public class CalculadoraTest {
         System.out.println("Raiz Quadrada!");
         Assert.assertEquals(2, calculadora.raizQuadrada(4), 0);
     }
-    
+
     @Test
     public void testFatorial() {
         System.out.println("Fatorial!");
         Assert.assertEquals(120, calculadora.fatorial(5), 0);
     }
-    
+
     @Test
     public void testFatorialRecursivo() {
         System.out.println("Fatorial Recursivo!");
         Assert.assertEquals(120, calculadora.fatorialRecursivo(5), 0);
+    }
+
+    @Test
+    public void testFibonnaci() {
+        System.out.println("Fibonacci!");
+        int[] esperado = new int[]{0, 1, 1, 2, 3, 5, 8, 13, 21, 34};
+        Assert.assertArrayEquals(esperado, calculadora.fibonnaci());
     }
 }

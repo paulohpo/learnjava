@@ -13,4 +13,8 @@ public interface Calculavel {
     double dividir(double... numeros);
 
     double multiplicar(double... numeros);
+    
+    double raizQuadrada(double num);
+    
+    double fatorial(double num);
 }

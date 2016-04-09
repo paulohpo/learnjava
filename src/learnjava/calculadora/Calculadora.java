@@ -54,4 +54,22 @@ public class Calculadora implements Calculavel {
         return resultado;
     }
 
+    @Override
+    public double raizQuadrada(double num) {
+        return Math.sqrt(num);
+    }
+
+    @Override
+    public double fatorial(double num) {
+        double resultado = 0;
+        for (double x = num; x > 0; x--) {
+            if (resultado == 0) {
+                resultado = num;
+            } else {
+                resultado = resultado * x;
+            }
+        }
+        return resultado;
+    }
+
 }

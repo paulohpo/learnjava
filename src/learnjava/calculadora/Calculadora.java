@@ -87,9 +87,6 @@ public class Calculadora implements Calculavel {
         for (int i = 0; i < 10; i++) {
             sequencia[i] = fibonnaci(i);
         }
-        for (int i : sequencia) {
-            System.out.println(i);
-        }
         return sequencia;
     }
 
